@@ -15,3 +15,9 @@ viewer/tiles/swot/
 viewer/tiles/terrain_p3/
 viewer/tiles/period2/
 viewer/tiles/period3/
+
+# Sync-conflict duplicates (e.g. "721 2.png", "12 2/")
+* 2
+* 2.*
+* 3
+* 3.*

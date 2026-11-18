@@ -54,7 +54,7 @@ function viewFor(p) {
     {padding: {top: 30, bottom: 30, left: 330, right: 30}, pitch, bearing});
   return cam ? {center: cam.center, zoom: cam.zoom, pitch, bearing} : CAMERAS[p];
 }
-let currentPeriod = 2;
+let currentPeriod = 1;
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -506,16 +506,18 @@ map.on('load', async () => {
   map.jumpTo(viewFor(currentPeriod));
   showPeriod(currentPeriod);
   applyTime();
-  autoplay(currentPeriod);
+  showIntro('open');     // opening card first; Start then leads to the Period 1 card
 });
 
 document.querySelectorAll('#periods button').forEach(b => {
   b.onclick = () => {
     document.querySelectorAll('#periods button').forEach(x => x.classList.remove('on'));
     b.classList.add('on');
-    map.flyTo({...viewFor(Number(b.dataset.p)), duration: 2500});
+    // The camera stays wherever you left it when switching periods (zoom, pan, tilt and rotation are kept).
+    // To re-fit each period to its own map extent instead: map.flyTo({...viewFor(Number(b.dataset.p)), duration: 2500});
     showPeriod(Number(b.dataset.p));
-    autoplay(Number(b.dataset.p));     // each section plays when opened; the button replays it
+    introEl.classList.remove('show'); introFor = null;
+    autoplay(Number(b.dataset.p), true);   // each section plays when opened (after its story, if any)
   };
 });
 
@@ -558,13 +560,108 @@ function playFrames() {
   dtimer = setInterval(() => {
     D.value = Math.min(max, D.value + 0.04);
     dslider.value = D.value * 100; applyFrames();
-    if (D.value >= max) { clearInterval(dtimer); dtimer = null; }
+    if (D.value >= max) {
+      clearInterval(dtimer); dtimer = null;
+      if (outroArmed) {      // closing card after the last observed frame (once per play)
+        outroArmed = false;
+        setTimeout(() => { if (currentPeriod === 3 && introFor === null) showIntro('end'); }, 2500);
+      }
+    }
   }, 40);
 }
 
+// Story pop-ups shown before a section plays (text is editable here).
+const INTROS = {
+  open: {
+    kicker: 'The Great Meadow',
+    title: 'Water across time',
+    body: 'Before 1956 the Great Meadow (Velykyi Luh) was a landscape of branching river channels, islands, wetlands and seasonal floods. ' +
+          'The Kakhovka Dam submerged much of it beneath an industrial reservoir, and its destruction in June 2023 drained that reservoir and exposed the ground beneath. ' +
+          'These changes are not simply the presence or absence of water: different water levels have produced different landscapes, ecologies and possibilities for human activity. ' +
+          'This map follows the water through three periods, using historical records, satellite imagery and spatial analysis.',
+    button: 'Start'
+  },
+  end: {
+    kicker: 'Conclusion',
+    title: 'Water as a changing condition',
+    body: 'The Great Meadow’s history shows that water is not simply a boundary between land and river. It is a changing condition that shapes landscapes, ecosystems, infrastructure and human activity. ' +
+          'Rather than proposing one fixed future, this research is a foundation for understanding how different water conditions, from reflooding to staying drained and everything between, might shape what comes next.',
+    fine: 'Directions: navigation and accessibility · ecological and landscape conditions · adaptive spatial interventions · future water scenarios',
+    button: 'Close'
+  },
+  about: {
+    kicker: 'About this map',
+    title: 'Four layers',
+    body: 'The historical river: the original channels, islands, wetlands and seasonal flooding, and patterns of movement and occupation.\n\n' +
+          'The reservoir and canal network: how the Kakhovka Dam turned the river into an engineered water system for agriculture, industry and infrastructure.\n\n' +
+          'The re-emerging landscape: how drainage exposed terrain, altered shorelines and created new environmental conditions.\n\n' +
+          'Changing water conditions: how different water levels might reshape navigation, ecosystems, vegetation, accessibility and human activity.',
+    fine: 'The map shows the first three. The fourth is the direction of the wider research.',
+    button: 'Close'
+  },
+  1: {
+    kicker: 'Before the dam',
+    title: 'The Great Meadow, before 1956',
+    body: 'Before the Kakhovka Dam, the Great Meadow was a network of river channels, islands, wetlands and floodplains. ' +
+          'It was neither entirely land nor entirely water: seasonal floods shifted the boundary between submerged and exposed ground, shaping navigation, settlement, vegetation and habitat. ' +
+          'People adapted to this moving geography. Navigation depended on knowing the channels and shallow passages, while the floodplain supported varied ecological communities and human activity.',
+    fine: 'No satellite imagery exists for this period. The map is a c.1775 historical map, georeferenced by hand; positions are approximate.'
+  },
+  3: {
+    kicker: 'After the breach',
+    title: 'Re-emergence, June 2023 to present',
+    body: 'The Kakhovka Dam was breached in June 2023, and the reservoir drained, exposing terrain that had been underwater since 1956 and cutting off the canal network that depended on it. ' +
+          'Old channels, mudflats, islands and floodplain surfaces began to re-emerge, and vegetation spread across parts of the exposed ground. ' +
+          'The change was not a simple move from water to dry land. Some areas stayed wet, others alternated between flooded and exposed, producing a range of new environments. ' +
+          'These differences matter for how the landscape evolves and for the ecological and human activities that depend on it.',
+    fine: 'Water is shown from Sentinel-2 satellite composites, July 2023 to December 2025.'
+  },
+  2: {
+    kicker: 'Reservoir era',
+    title: 'The Kakhovka Dam, 1956',
+    body: 'Between 1950 and 1956 the Soviet Union built the Kakhovka Dam and hydroelectric station on the lower Dnipro. ' +
+          'Its reservoir drowned the Great Meadow and its network of channels, islands, reed beds and forests. ' +
+          'It submerged villages and riverways, ending the natural spring floods that fed the meadow. ' +
+          'In exchange came a ‘sea’ for shipping, hydropower and fishing, with a canal network carrying water to farmland, industry and towns across the dry south.',
+    fine: 'The filling shown is modelled over a reconstructed bed, not the 1956 chronology.'
+  }
+};
+const introEl = document.getElementById('intro');
+let introFor = null;
+function showIntro(p) {
+  const c = INTROS[p];
+  introFor = p;
+  document.getElementById('intro-kicker').textContent = c.kicker;
+  document.getElementById('intro-title').textContent = c.title;
+  document.getElementById('intro-body').textContent = c.body;
+  document.getElementById('intro-fine').textContent = c.fine || '';
+  if (p === 2) { T.value = 0; applyTime(); }     // hold the empty start while the text is read
+  if (p === 3) { T3.value = 0; applyTime(); D.value = 0; if (frameMeta) applyFrames(); }
+  introEl.classList.add('show');
+  document.getElementById('intro-go').focus({preventScroll: true});
+}
+function closeIntro() {
+  if (introFor === null) return;
+  const p = introFor;
+  introFor = null;
+  introEl.classList.remove('show');
+  if (p === 'open') { showIntro(1); return; }       // opening card, then the Period 1 card
+  if (typeof p !== 'number') return;                // 'end' and 'about' just close
+  if (p === 3) outroArmed = true;                   // closing card follows once the observed frames finish
+  if (currentPeriod === p) autoplay(p);       // intro already shown, so this plays straight away
+}
+let outroArmed = false;
+document.getElementById('about').onclick = () => { stopTimers(); showIntro('about'); };
+document.getElementById('intro-go').onclick = closeIntro;
+document.addEventListener('keydown', e => {
+  if (introFor !== null && (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape')) { e.preventDefault(); closeIntro(); }
+});
+
 // Every section plays when opened; the Replay buttons restart it from the beginning.
-function autoplay(p) {
+// withIntro = true (opening a section) shows its story pop-up first, if it has one.
+function autoplay(p, withIntro) {
   stopTimers();
+  if (withIntro && INTROS[p]) { showIntro(p); return; }
   if (p === 2) playTimeline();
   if (p === 3) { playTimeline(); playFrames(); }
 }
