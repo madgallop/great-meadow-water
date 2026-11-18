@@ -628,9 +628,11 @@ const INTROS = {
 };
 const introEl = document.getElementById('intro');
 let introFor = null;
+const introSeen = new Set();    // period cards already shown this visit; they do not pop up again
 function showIntro(p) {
   const c = INTROS[p];
   introFor = p;
+  if (typeof p === 'number') introSeen.add(p);
   document.getElementById('intro-kicker').textContent = c.kicker;
   document.getElementById('intro-title').textContent = c.title;
   document.getElementById('intro-body').textContent = c.body;
@@ -661,7 +663,7 @@ document.addEventListener('keydown', e => {
 // withIntro = true (opening a section) shows its story pop-up first, if it has one.
 function autoplay(p, withIntro) {
   stopTimers();
-  if (withIntro && INTROS[p]) { showIntro(p); return; }
+  if (withIntro && INTROS[p] && !introSeen.has(p)) { showIntro(p); return; }
   if (p === 2) playTimeline();
   if (p === 3) { playTimeline(); playFrames(); }
 }
