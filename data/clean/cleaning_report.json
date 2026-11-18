@@ -1,0 +1,26 @@
+{
+  "canals_raw_features": 786,
+  "canal_segments_kept": 557,
+  "canal_km": 1014.7,
+  "canal_km_observable": 1002.7,
+  "tiers": {
+    "unnamed_canal": 509,
+    "named_trunk": 20,
+    "numbered_branch": 24,
+    "discharge": 4
+  },
+  "drains_ditches": 224,
+  "waterbody_polygons": 2,
+  "pumping_stations": 9,
+  "intakes_and_discharges": 4,
+  "network_components": 204,
+  "network_note": "OSM network is fragmented; components are QA only",
+  "largest_component_km": 71.2,
+  "segments_with_width_tag": 16,
+  "segments_with_documented_dates": 0,
+  "order_basis": "dam_distance_fallback",
+  "rejected": {
+    "shorter than 5 m": 3,
+    "intake_stations point is a canal segment centre, not a station": 45
+  }
+}

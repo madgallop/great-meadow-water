@@ -1,0 +1,76 @@
+{
+  "bounds": [
+    33.19444,
+    46.47703,
+    35.36155,
+    47.9229
+  ],
+  "minzoom": 7,
+  "maxzoom": 12,
+  "frames": [
+    {
+      "id": "f00",
+      "label": "Before the breach (May to 6 Jun 2023)"
+    },
+    {
+      "id": "f01",
+      "label": "Jul to Aug 2023"
+    },
+    {
+      "id": "f02",
+      "label": "Sep to Oct 2023"
+    },
+    {
+      "id": "f03",
+      "label": "Nov to Dec 2023"
+    },
+    {
+      "id": "f04",
+      "label": "Jan to Feb 2024"
+    },
+    {
+      "id": "f05",
+      "label": "Mar to Apr 2024"
+    },
+    {
+      "id": "f06",
+      "label": "May to Jun 2024"
+    },
+    {
+      "id": "f07",
+      "label": "Jul to Aug 2024"
+    },
+    {
+      "id": "f08",
+      "label": "Sep to Oct 2024"
+    },
+    {
+      "id": "f09",
+      "label": "Nov to Dec 2024"
+    },
+    {
+      "id": "f10",
+      "label": "Jan to Feb 2025"
+    },
+    {
+      "id": "f11",
+      "label": "Mar to Apr 2025"
+    },
+    {
+      "id": "f12",
+      "label": "May to Jun 2025"
+    },
+    {
+      "id": "f13",
+      "label": "Jul to Aug 2025"
+    },
+    {
+      "id": "f14",
+      "label": "Sep to Oct 2025"
+    },
+    {
+      "id": "f15",
+      "label": "Nov to Dec 2025"
+    }
+  ]
+}

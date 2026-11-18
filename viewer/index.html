@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Great Meadow - water across time (prototype)</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css">
+<style>
+  html, body { margin:0; height:100%; font:14px/1.4 system-ui, sans-serif; }
+  #map { position:absolute; inset:0; }
+  #panel { position:absolute; top:12px; left:12px; width:290px; padding:12px 14px;
+           background:rgba(255,255,255,.93); border-radius:8px; box-shadow:0 2px 8px #0004; }
+  #panel h1 { font-size:16px; margin:0 0 6px; }
+  #panel button { margin:2px 2px 2px 0; padding:5px 9px; cursor:pointer; }
+  #panel button.on { background:#123344; color:#fff; border-color:#123344; }
+  #t, #d { width:100%; }
+  .note { font-size:12px; color:#444; margin-top:6px; }
+  .key span { display:inline-block; width:14px; height:4px; margin:0 5px 0 8px; vertical-align:middle; }
+  .section { margin-top:8px; padding-top:6px; border-top:1px solid #ddd; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="panel">
+  <h1>The Great Meadow</h1>
+  <div id="periods">
+    <button data-p="1">1 · Before 1956</button>
+    <button data-p="2" class="on">2 · Reservoir era</button>
+    <button data-p="3">3 · After June 2023</button>
+  </div>
+  <div class="note" id="periodnote"></div>
+  <!-- Style/basemap experiments hidden for now (still wired up in app.js). Remove display:none to bring back.
+  <div id="palettes" class="note">Style test:
+    <button data-pal="mappalette">Map palette</button>
+    <button data-pal="original">Original</button>
+  </div>
+
+  <div id="basemap" class="note">Basemap (Map palette):
+    <button data-bm="muted">Muted</button>
+    <button data-bm="full">Full colour</button>
+    <button data-bm="off">Off</button>
+  </div>
+  -->
+  <div id="palettes" style="display:none"><button data-pal="mappalette"></button></div>
+  <div id="basemap" style="display:none"></div>
+
+  <div class="section" id="canalbox">
+    <!-- Slider and label hidden (app.js still drives them); text moved to README.md -->
+    <label class="note" id="tlabel" for="t" style="display:none"></label>
+    <input id="t" type="range" min="0" max="100" value="100" style="display:none">
+    <button id="play">Replay</button>
+    <div class="note" id="resvnote" style="display:none"></div>
+    <div class="key note">
+      <span style="background:#857f74"></span>dry canal
+      <span style="background:#59acaa"></span>water
+      <span style="background:#857f74"></span>intake (dry)
+      <span style="background:#94ceba"></span>intake (fed)
+    </div>
+    <div class="note" id="status"></div>
+  </div>
+
+  <div class="section hidden" id="p3key">
+    <div class="note"><b>After the breach, summer 2026</b></div>
+    <div class="key note">
+      <span style="background:#5c564b"></span>canal: observed, no water (drains)<br>
+      <span style="background:#ac9e8d"></span>canal: too narrow to see or no clear image (assumed dry; needs verification, does not animate)<br>
+      <span style="background:#94ceba"></span>canal: some water detected (stays wet)<br>
+      <span style="background:#59acaa"></span>canal: water detected (stays wet)<br>
+      <span style="background:#94ceba"></span>intake: water within 500 m<br>
+      <span style="background:#b9c9c3"></span>intake: no water within 500 m (fades as the water recedes)<br>
+      <span style="background:#cfc7ae"></span>intake: needs verification (not measurable from satellite; turns beige as the water recedes)
+    </div>
+    <!-- Assumed-operating / 500 m caveat moved to README.md -->
+  </div>
+
+  <!-- Only the observation label is shown; the dropdown, slider, Replay, key and note are hidden
+       (remove display:none to bring them back). -->
+  <div class="section hidden" id="drainbox">
+    <label class="note" for="d" style="display:none"><b>Observed water over time</b></label>
+    <select id="dset" style="display:none"></select>
+    <input id="d" type="range" min="0" max="1500" value="0" style="display:none">
+    <button id="dplay" style="display:none">Replay</button>
+    <div class="note" id="dlabel"></div>
+    <div class="key note">
+      <span style="background:#3e7a84"></span>open water
+      <span style="background:#59acaa"></span>shallow
+      <span style="background:#94ceba"></span>weak signal
+    </div>
+    <div class="note" id="dnote" style="display:none"></div>
+  </div>
+
+  <!-- Prototype note moved to README.md -->
+</div>
+<script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

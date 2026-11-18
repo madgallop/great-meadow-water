@@ -1,0 +1,1077 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-11-05T17:40:51Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/36356263",
+      "properties": {
+        "@id": "way/36356263",
+        "name": "Північно-Кримський канал",
+        "name:br": "Kanol Norzh Krimea",
+        "name:crh": "Şimaliy Qırım kanalı",
+        "name:de": "Nord-Krim-Kanal",
+        "name:en": "North Crimean Canal",
+        "name:fr": "Canal de Crimée du Nord",
+        "name:nl": "Noord-Krimkanaal",
+        "name:pl": "Północny Kanał Krymski",
+        "name:ru": "Северо-Крымский канал",
+        "name:uk": "Північно-Кримський канал",
+        "usage": "transmission",
+        "waterway": "canal",
+        "width": "90",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3964185,
+          46.7677285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/103839495",
+      "properties": {
+        "@id": "way/103839495",
+        "name": "Дніпро-Кривий Ріг",
+        "name:ru": "Днепр-Кривой Рог",
+        "name:uk": "Дніпро-Кривий Ріг",
+        "waterway": "canal",
+        "wikidata": "Q4212129",
+        "wikipedia": "uk:Канал Дніпро — Кривий Ріг",
+        "wikipedia:ru": "Канал Днепр — Кривой Рог",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5124469,
+          47.9277407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/112190844",
+      "properties": {
+        "@id": "way/112190844",
+        "name": "Дніпро-Кривий Ріг",
+        "name:ru": "Днепр-Кривой Рог",
+        "name:uk": "Дніпро-Кривий Ріг",
+        "waterway": "canal",
+        "width": "4",
+        "wikidata": "Q4212129",
+        "wikipedia": "uk:Канал Дніпро — Кривий Ріг",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9801508,
+          47.4924939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/118181458",
+      "properties": {
+        "@id": "way/118181458",
+        "name": "Р-9",
+        "name:uk": "Р-9",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0577521,
+          46.690933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/131975130",
+      "properties": {
+        "@id": "way/131975130",
+        "name": "Канал Р-1",
+        "name:uk": "Канал Р-1",
+        "source": "Bing",
+        "waterway": "canal",
+        "width": "10",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6424265,
+          46.7429533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/186619368",
+      "properties": {
+        "@id": "way/186619368",
+        "building": "industrial",
+        "man_made": "pumping_station",
+        "name": "Насосна станція",
+        "name:uk": "Насосна станція",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2193621,
+          47.4389552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/195532941",
+      "properties": {
+        "@id": "way/195532941",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6301287,
+          46.786004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/238886813",
+      "properties": {
+        "@id": "way/238886813",
+        "layer": "-1",
+        "name": "Дніпро-Кривий Ріг",
+        "name:ru": "Днепр-Кривой Рог",
+        "name:uk": "Дніпро-Кривий Ріг",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "width": "4",
+        "wikidata": "Q4212129",
+        "wikipedia": "uk:Канал Дніпро — Кривий Ріг",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9180906,
+          47.5646076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/238886815",
+      "properties": {
+        "@id": "way/238886815",
+        "name": "Дніпро-Кривий Ріг",
+        "name:ru": "Днепр-Кривой Рог",
+        "name:uk": "Дніпро-Кривий Ріг",
+        "waterway": "canal",
+        "width": "4",
+        "wikidata": "Q4212129",
+        "wikipedia": "uk:Канал Дніпро — Кривий Ріг",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.8732014,
+          47.5610111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/238888608",
+      "properties": {
+        "@id": "way/238888608",
+        "layer": "-1",
+        "name": "Дніпро-Кривий Ріг",
+        "name:ru": "Днепр-Кривой Рог",
+        "name:uk": "Дніпро-Кривий Ріг",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "width": "4",
+        "wikidata": "Q4212129",
+        "wikipedia": "uk:Канал Дніпро — Кривий Ріг",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.8445431,
+          47.5624752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/238888609",
+      "properties": {
+        "@id": "way/238888609",
+        "name": "Дніпро-Кривий Ріг",
+        "name:ru": "Днепр-Кривой Рог",
+        "name:uk": "Дніпро-Кривий Ріг",
+        "waterway": "canal",
+        "width": "4",
+        "wikidata": "Q4212129",
+        "wikipedia": "uk:Канал Дніпро — Кривий Ріг",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6978237,
+          47.671127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/239208574",
+      "properties": {
+        "@id": "way/239208574",
+        "layer": "-1",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6319309,
+          46.7863436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/239208576",
+      "properties": {
+        "@id": "way/239208576",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7841958,
+          46.8003118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/248446545",
+      "properties": {
+        "@id": "way/248446545",
+        "building": "yes",
+        "man_made": "pumping_station",
+        "name": "ВНС №35",
+        "name:uk": "ВНС №35",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.256485,
+          47.8870691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/274580415",
+      "properties": {
+        "@id": "way/274580415",
+        "layer": "-1",
+        "name": "Канал Р-1",
+        "name:uk": "Канал Р-1",
+        "source": "Bing",
+        "tunnel": "yes",
+        "waterway": "canal",
+        "width": "10",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.641552,
+          46.7426413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/274580417",
+      "properties": {
+        "@id": "way/274580417",
+        "name": "Канал Р-1",
+        "name:uk": "Канал Р-1",
+        "source": "Bing",
+        "waterway": "canal",
+        "width": "10",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5868827,
+          46.7209191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/277657115",
+      "properties": {
+        "@id": "way/277657115",
+        "name": "Північно-Кримський канал",
+        "name:br": "Kanol Norzh Krimea",
+        "name:crh": "Şimaliy Qırım kanalı",
+        "name:de": "Nord-Krim-Kanal",
+        "name:en": "North Crimean Canal",
+        "name:fr": "Canal de Crimée du Nord",
+        "name:nl": "Noord-Krimkanaal",
+        "name:pl": "Północny Kanał Krymski",
+        "name:ru": "Северо-Крымский канал",
+        "name:uk": "Північно-Кримський канал",
+        "usage": "transmission",
+        "waterway": "canal",
+        "width": "90",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.2640487,
+          46.5239451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/277657116",
+      "properties": {
+        "@id": "way/277657116",
+        "name": "Північно-Кримський канал",
+        "name:br": "Kanol Norzh Krimea",
+        "name:crh": "Şimaliy Qırım kanalı",
+        "name:de": "Nord-Krim-Kanal",
+        "name:en": "North Crimean Canal",
+        "name:fr": "Canal de Crimée du Nord",
+        "name:nl": "Noord-Krimkanaal",
+        "name:ru": "Северо-Крымский канал",
+        "name:uk": "Північно-Кримський канал",
+        "usage": "transmission",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.398291,
+          46.760078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/277657117",
+      "properties": {
+        "@id": "way/277657117",
+        "name": "Північно-Кримський канал",
+        "name:br": "Kanol Norzh Krimea",
+        "name:en": "North Crimean Canal",
+        "name:fr": "Canal de Crimée du Nord",
+        "name:ru": "Северо-Крымский канал",
+        "name:uk": "Північно-Кримський канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.398291,
+          46.760078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/334493784",
+      "properties": {
+        "@id": "way/334493784",
+        "layer": "-1",
+        "name": "Труба",
+        "name:uk": "Труба",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1707692,
+          47.7608302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/454116442",
+      "properties": {
+        "@id": "way/454116442",
+        "name": "Каховський магістральний канал",
+        "name:uk": "Каховський магістральний канал",
+        "waterway": "canal",
+        "width": "80",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7369856,
+          46.6963324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/454118073",
+      "properties": {
+        "@id": "way/454118073",
+        "name": "Канал Р-1",
+        "name:uk": "Канал Р-1",
+        "source": "Bing",
+        "waterway": "canal",
+        "width": "10",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4777272,
+          46.6412938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/454118074",
+      "properties": {
+        "@id": "way/454118074",
+        "layer": "-1",
+        "name": "Канал Р-1",
+        "name:uk": "Канал Р-1",
+        "source": "Bing",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "width": "10",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5395114,
+          46.6993791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/462141326",
+      "properties": {
+        "@id": "way/462141326",
+        "man_made": "pumping_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6460578,
+          47.0723382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/609427794",
+      "properties": {
+        "@id": "way/609427794",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9435685,
+          46.763068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/609427795",
+      "properties": {
+        "@id": "way/609427795",
+        "layer": "-1",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "tunnel": "yes",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9435041,
+          46.7633314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/676524084",
+      "properties": {
+        "@id": "way/676524084",
+        "addr:housenumber": "2",
+        "addr:street": "вулиця Михайла Жолобова",
+        "building": "service",
+        "man_made": "pumping_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3432713,
+          47.8932972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/764105136",
+      "properties": {
+        "@id": "way/764105136",
+        "layer": "-1",
+        "name": "Р-9",
+        "name:uk": "Р-9",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2525261,
+          46.8101193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/764105137",
+      "properties": {
+        "@id": "way/764105137",
+        "name": "Р-9",
+        "name:uk": "Р-9",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.304749,
+          46.7880993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/764105138",
+      "properties": {
+        "@id": "way/764105138",
+        "layer": "-1",
+        "name": "Р-9",
+        "name:uk": "Р-9",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2657817,
+          46.8016068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/775595581",
+      "properties": {
+        "@id": "way/775595581",
+        "building": "yes",
+        "man_made": "pumping_station",
+        "name": "КНС \"Лапінська\"",
+        "name:uk": "КНС \"Лапінська\"",
+        "pumping_station": "sewage",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.388199,
+          47.5535519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/804978897",
+      "properties": {
+        "@id": "way/804978897",
+        "man_made": "pumping_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0035883,
+          47.8505478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/961657147",
+      "properties": {
+        "@id": "way/961657147",
+        "man_made": "pumping_station",
+        "name": "Насосна",
+        "name:uk": "Насосна",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.3258919,
+          47.4353501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/991944983",
+      "properties": {
+        "@id": "way/991944983",
+        "man_made": "pumping_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0539857,
+          47.8355501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1019933943",
+      "properties": {
+        "@id": "way/1019933943",
+        "man_made": "pumping_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9461802,
+          47.8010493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1181186039",
+      "properties": {
+        "@id": "way/1181186039",
+        "layer": "-1",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.087407,
+          46.8276136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1181186040",
+      "properties": {
+        "@id": "way/1181186040",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.1069083,
+          46.8296062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1188958076",
+      "properties": {
+        "@id": "way/1188958076",
+        "name": "Канал Р-1-1",
+        "name:uk": "Канал Р-1-1",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.661341,
+          46.5940065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1188958079",
+      "properties": {
+        "@id": "way/1188958079",
+        "name": "Канал Р-1-1",
+        "name:uk": "Канал Р-1-1",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7204555,
+          46.6013229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1188958080",
+      "properties": {
+        "@id": "way/1188958080",
+        "layer": "-1",
+        "name": "Канал Р-1-1",
+        "name:uk": "Канал Р-1-1",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7197684,
+          46.6012223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1188958104",
+      "properties": {
+        "@id": "way/1188958104",
+        "intermittent": "yes",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.1642518,
+          46.8354132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1188989602",
+      "properties": {
+        "@id": "way/1188989602",
+        "name": "Канал Р-3",
+        "name:uk": "Канал Р-3",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.0408104,
+          46.5915291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1188989605",
+      "properties": {
+        "@id": "way/1188989605",
+        "name": "Каховський магістральний канал",
+        "name:uk": "Каховський магістральний канал",
+        "waterway": "canal",
+        "width": "80",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9758005,
+          46.5724169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413934",
+      "properties": {
+        "@id": "way/1189413934",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.0117266,
+          46.8199696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413935",
+      "properties": {
+        "@id": "way/1189413935",
+        "lock": "yes",
+        "name": "Сірогозький магістральний канал",
+        "name:uk": "Сірогозький магістральний канал",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9361251,
+          46.8123352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413936",
+      "properties": {
+        "@id": "way/1189413936",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9358986,
+          46.8121761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413937",
+      "properties": {
+        "@id": "way/1189413937",
+        "layer": "-1",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.935941,
+          46.8119511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413938",
+      "properties": {
+        "@id": "way/1189413938",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9370618,
+          46.8056931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413939",
+      "properties": {
+        "@id": "way/1189413939",
+        "layer": "-1",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9381387,
+          46.7994717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413940",
+      "properties": {
+        "@id": "way/1189413940",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9392147,
+          46.7858906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413941",
+      "properties": {
+        "@id": "way/1189413941",
+        "layer": "-1",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "tunnel": "culvert",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9414371,
+          46.7722624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413942",
+      "properties": {
+        "@id": "way/1189413942",
+        "name": "Канал 2-МК",
+        "name:uk": "Канал 2-МК",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9424664,
+          46.76781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413944",
+      "properties": {
+        "@id": "way/1189413944",
+        "name": "Канал 1-МКр",
+        "name:uk": "Канал 1-МКр",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9135277,
+          46.810373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1189413945",
+      "properties": {
+        "@id": "way/1189413945",
+        "layer": "-1",
+        "name": "Канал 1-МКр",
+        "name:uk": "Канал 1-МКр",
+        "tunnel": "pipe",
+        "waterway": "canal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9063371,
+          46.8439711
+        ]
+      }
+    }
+  ]
+}

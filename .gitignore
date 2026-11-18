@@ -1,0 +1,17 @@
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
+
+# Large working data (regenerate with gee/ and python/ scripts; see README)
+data/gee_outputs/
+data/bathymetry/
+data/derived/
+data/experimental/*.tif
+data/swot/
+
+# Tiles not used by the published viewer
+viewer/tiles/swot/
+viewer/tiles/terrain_p3/
+viewer/tiles/period2/
+viewer/tiles/period3/

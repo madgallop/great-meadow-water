@@ -1,0 +1,11 @@
+{
+  "bounds": [
+    33.09652,
+    46.22478,
+    35.48005,
+    48.02515
+  ],
+  "minzoom": 7,
+  "maxzoom": 12,
+  "source": "period3_postdam_mappalette.tif"
+}
